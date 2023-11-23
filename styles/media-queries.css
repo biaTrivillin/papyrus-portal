@@ -1,0 +1,67 @@
+@media (min-width: 720px) {
+    :root {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    :root{
+        font-size: 120%;
+    }
+
+    .nav__button {
+        font-size: 1rem;
+    } 
+
+    #login__content {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        padding: 2rem 0;
+    }
+
+    .field {
+        width: calc(50vw - 6rem);
+    }
+
+    #presentation h2{
+        display: none;
+        /* justify-self: center;
+        align-self: center; */
+    }
+
+    .img__container {
+        margin-top: 2rem;
+    }
+
+    #log__in {
+        align-items: start;
+    }
+
+    #log__in h1{
+        display: block;
+        font-size: 2rem;
+        padding: 0 4rem 0 2.5rem;
+    }
+
+    #pp__store {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 0;
+    }
+
+    .text__content {
+        grid-area: 1/1/2/2;
+    }
+
+    .visual {
+        grid-area: 1/2/2/3;
+        width: 20rem;
+        justify-self: center;
+    }
+
+    .visual h2 {
+        font-size: 2rem;
+    }
+
+}
+

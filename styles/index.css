@@ -20,7 +20,7 @@
 }
 
 body, html {
-    min-width: 100%;
+    width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
 }
@@ -33,6 +33,7 @@ header {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    z-index: 1;
 }
 
 #logo {
@@ -133,7 +134,7 @@ main {
 .form__field {
     border: none;
     padding-left: 2.5rem;
-    width: calc(100vw - 2.5rem);
+    /* width: calc(100vw - 2.5rem); */
 }
 
 .field {
@@ -178,6 +179,10 @@ main {
     gap: 1rem;
 }
 
+#log__in h1{
+    display: none;
+}
+
 .warnning {
     align-self: center;
     display: flex;
@@ -200,6 +205,17 @@ main {
     flex-direction: column;
     gap: 2rem;
     padding-bottom: 2.6rem;
+}
+
+.visual svg {
+    fill: var(--pink-text);
+}
+
+.visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 #book__image__two {
