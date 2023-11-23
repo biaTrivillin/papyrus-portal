@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+@import url(media-queries.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+:root {
+    font-size: 62.5%;
+    --header-color: #3CA6A6;
+    --background-color: #7FCFD0;
+    --background-color-two: #F2E2CE;
+    --text-color: #295E73;
+    --pink-text: #F26D78;
+    --white-text: #F6F6F6;
+}
+
+body, html {
+    min-width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 2.3rem;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+#logo {
+     padding-left: 1rem;
+     font-size: 1.6rem;
+     text-decoration: none;
+}
+
+#nav__container {
+    padding-right: 1rem;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.nav__button {
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.white__strong {
+    color: var(--white-text);
+}
+
+.pink__strong {
+    color: var(--pink-text);
+}
+
+main {
+    background-color: var(--background-color);
+    padding-top: 2.3rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    padding-top: 3rem;
+}
+
+.sub__title {
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.img__container {
+    text-align: center;
+    padding-left: 8rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#book__image__one {
+    width: 16rem;
+}
+
+.fish {
+    overflow: hidden;
+    position: absolute;
+    width: 3.4rem;
+}
+
+.fish__one {
+    top: 3rem;
+    left: 0;
+}
+
+.fish__two {
+    top: 6rem;
+    left: 3rem;
+}
+
+.fish__three {
+    top: 10rem;
+    left: 6rem;
+}
+
+.fish__four {
+    top: 12.2rem;
+    left: 5.5rem;
+}
+
+.fish__five {
+    top: 12rem;
+    left: 10rem;
+}
+
+.form__title {
+    font-size: 2rem;
+    padding-left: 2.5rem;
+}
+
+.form__field {
+    border: none;
+    padding-left: 2.5rem;
+    width: calc(100vw - 2.5rem);
+}
+
+.field {
+    background-color: transparent;
+    border-radius: 5rem;
+    height: 2rem;
+    width: calc(100vw - 6rem);
+    padding-left: 1rem;
+    border: solid 0.1rem var(--text-color);  
+}
+
+.field::placeholder {
+    font-size: 1rem; 
+    color: var(--text-color);
+}
+
+.field:focus {
+    border:  solid 0.1rem var(--pink-text);
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.button {
+    border: none;
+    background-color: var(--pink-text);
+    height: 2rem;
+    width: 8rem;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+    font-size: 1rem;
+    color: var(--white-text);
+    align-self: center;
+    cursor: pointer;
+}
+
+#log__in {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.warnning {
+    align-self: center;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    gap: 3rem;
+}
+
+.warnning a {
+    text-decoration: none;
+    color: var(--pink-text);
+    margin-bottom: 4rem;
+}
+
+#pp__store {
+    padding-top: 3rem;
+    background-color: var(--background-color-two);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2.6rem;
+}
+
+#book__image__two {
+    width: 18rem;
+}
+
+.text__content {
+    font-size: 1.4rem;
+    padding: 0 2.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: justify;
+}
+
+.toggle__list {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-left: 3rem;
+    text-align: justify;
+    display: none;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.toggle svg{
+    fill: var(--pink-text);
+    width: 0.9rem;
+    transform: rotate(90deg);
+}
+
+footer {
+    height: 8rem;
+    background-color: var(--header-color);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h2 {
+    white-space: wrap;
+    font-size: 1.5rem;
+    width: 6.3rem;
+    grid-area: 1/1/3/2;
+}
+
+.top__footer h3, button {
+    font-weight: 500;
+    justify-self: end;
+    font-size: 1rem;
+}
+
+.top__footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    border-bottom: solid var(--text-color) 0.1rem;
+    padding-bottom: 1.2rem;
+}
+
+.bottom__footer {
+    padding-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom__footer svg {
+    fill: var(--text-color);
+    cursor: pointer;
+}
+
+.bottom__footer h3 {
+    font-size: 1rem;
+}
