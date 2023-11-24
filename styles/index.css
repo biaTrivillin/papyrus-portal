@@ -320,3 +320,16 @@ footer h2 {
 .bottom__footer h3 {
     font-size: 1rem;
 }
+
+/* -------------------- SCROLLBAR -------------------- */
+
+::-webkit-scrollbar-track {
+    background-color: var(--background-color);
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+}
