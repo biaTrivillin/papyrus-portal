@@ -1,13 +1,19 @@
+/* -------------------- TABLET SCREEN -------------------- */
+
 @media (min-width: 720px) {
     :root {
         font-size: 100%;
     }
 }
 
+/* -------------------- DESKTOP SCREEN -------------------- */
+
 @media (min-width: 1000px) {
     :root{
         font-size: 120%;
     }
+
+    /* _____________ HEADER _____________ */
 
     .nav__button {
         font-size: 1rem;
@@ -19,14 +25,10 @@
         padding: 2rem 0;
     }
 
-    .field {
-        width: calc(50vw - 6rem);
-    }
+    /* _____________ LOG IN SECTION _____________ */
 
     #presentation h2{
         display: none;
-        /* justify-self: center;
-        align-self: center; */
     }
 
     .img__container {
@@ -42,6 +44,12 @@
         font-size: 2rem;
         padding: 0 4rem 0 2.5rem;
     }
+
+    .field {
+        width: calc(50vw - 6rem);
+    }
+
+    /* _____________ STORE SECTION _____________ */
 
     #pp__store {
         display: grid;

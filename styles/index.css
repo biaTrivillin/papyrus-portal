@@ -1,5 +1,6 @@
+/* -------------------- GLOBAL -------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
-@import url(media-queries.css);
 
 * {
     padding: 0;
@@ -24,6 +25,16 @@ body, html {
     min-height: 100vh;
     box-sizing: border-box;
 }
+
+.white__strong {
+    color: var(--white-text);
+}
+
+.pink__strong {
+    color: var(--pink-text);
+}
+
+/* -------------------- HEADER -------------------- */
 
 header {
     width: 100%;
@@ -53,17 +64,19 @@ header {
     text-decoration: none;
 }
 
-.white__strong {
-    color: var(--white-text);
-}
-
-.pink__strong {
-    color: var(--pink-text);
-}
+/* -------------------- MAIN -------------------- */
 
 main {
     background-color: var(--background-color);
     padding-top: 2.3rem;
+}
+
+/* _____________ LOG IN SECTION _____________ */
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
@@ -77,12 +90,7 @@ main {
     margin-bottom: 2rem;
 }
 
-#presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* --> log in image  */
 
 .img__container {
     text-align: center;
@@ -126,6 +134,8 @@ main {
     left: 10rem;
 }
 
+/* --> log in form  */
+
 .form__title {
     font-size: 2rem;
     padding-left: 2.5rem;
@@ -134,7 +144,6 @@ main {
 .form__field {
     border: none;
     padding-left: 2.5rem;
-    /* width: calc(100vw - 2.5rem); */
 }
 
 .field {
@@ -197,6 +206,8 @@ main {
     margin-bottom: 4rem;
 }
 
+/* _____________ STORE SECTION _____________ */
+
 #pp__store {
     padding-top: 3rem;
     background-color: var(--background-color-two);
@@ -253,6 +264,8 @@ main {
     width: 0.9rem;
     transform: rotate(90deg);
 }
+
+/* -------------------- FOOTER -------------------- */
 
 footer {
     height: 8rem;
