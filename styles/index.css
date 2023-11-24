@@ -158,7 +158,7 @@ main {
     border-radius: 5rem;
     height: 2rem;
     width: calc(100vw - 6rem);
-    padding-left: 1rem;
+    padding: 0 1rem;
     border: solid 0.1rem var(--text-color);  
 }
 
