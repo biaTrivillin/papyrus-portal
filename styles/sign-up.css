@@ -34,3 +34,15 @@
 .radio__button[type="radio"]:checked + label .show__radio__button {
     background: radial-gradient(circle, #F26D78 45%, transparent 50%);
 }
+
+#gender__field h3 {
+    font-size: 1rem;
+}
+
+#gender__field {
+    padding-left: 3rem;
+}
+
+.radio__title{
+    font-size: 0.8rem;
+}
