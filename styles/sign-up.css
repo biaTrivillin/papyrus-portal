@@ -1,0 +1,36 @@
+.radio__button {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.radio__btn__container {
+    display: flex;
+    gap: 1rem;
+}
+
+#gender__field label {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.show__radio__button {
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 50%;
+    border: 0.1rem solid #295E73;
+}
+
+.radio__button[type="radio"] + label {
+    color: #295E73;
+}
+
+.radio__button[type="radio"]:checked + label span {
+    color: #F26D78;
+}
+
+.radio__button[type="radio"]:checked + label .show__radio__button {
+    background: radial-gradient(circle, #F26D78 45%, transparent 50%);
+}

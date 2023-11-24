@@ -6,6 +6,7 @@
     <title>Papyrus Portal</title>
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/media-queries.css">
+    <link rel="stylesheet" href="../styles/sign-up.css">
 </head>
 <body>
     <header>
@@ -46,9 +47,23 @@
                 
                 <fieldset class="form__field" id="gender__field">
                     <h3>Gender</h3>
-                    <input type="radio" name="gender__select" value="female"/> Female
-                    <input type="radio" name="gender__select" value="male"/> Male
-                    <input type="radio" name="gender__select" value="other"/> Other                    
+                    <div class="radio__btn__container">
+                        <input class="radio__button" id="radio__one" type="radio" name="gender__select" value="female"/>
+                        <label for="radio__one">
+                            <div class="show__radio__button"></div>
+                            <span>Female</span>
+                        </label>
+                        <input class="radio__button" id="radio__two" type="radio" name="gender__select" value="male"/>
+                        <label for="radio__two">
+                            <div class="show__radio__button"></div>
+                            <span>Male</span>
+                        </label>
+                        <input class="radio__button" id="radio__three" type="radio" name="gender__select" value="other"/>
+                        <label for="radio__three">
+                            <div class="show__radio__button"></div>
+                            <span>Other</span>
+                        </label>                    
+                    </div>
                     <span class="error-message"></span>
                 </fieldset>
 
