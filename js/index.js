@@ -74,3 +74,11 @@ function showToggle() {
         
     }
 }
+
+const loginButton = document.querySelector('#login__button');
+
+loginButton.addEventListener('click', login);
+
+function login() {
+    window.location.href = '../html/next-page.html'
+}
