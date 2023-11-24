@@ -31,6 +31,10 @@
         display: none;
     }
 
+    .title {
+        padding: 1rem;
+    }
+
     .img__container {
         margin-top: 2rem;
     }

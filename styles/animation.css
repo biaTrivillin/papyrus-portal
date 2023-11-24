@@ -1,0 +1,84 @@
+@keyframes is-floating {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(2rem) translateY(-1rem);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes is-swimming-one {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+
+    50%{
+        transform: translateX(-2rem) translateY(-2rem) rotate(-35deg);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes is-swimming-two {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-1rem) translateY(-2rem) rotate(50deg);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes is-swimming-three {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(1.5rem) translateY(-0.5rem) rotate(-20deg);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes is-swimming-four {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(1.5rem) translateY(-0.5rem) rotate(-10deg);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes is-swimming-five {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(1.5rem) translateY(-1rem) rotate(30deg);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}

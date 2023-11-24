@@ -1,6 +1,7 @@
 /* -------------------- GLOBAL -------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+@import url(animation.css);
 
 * {
     padding: 0;
@@ -101,6 +102,7 @@ main {
 
 #book__image__one {
     width: 16rem;
+    animation: is-floating 15s ease-in-out infinite;
 }
 
 .fish {
@@ -112,26 +114,31 @@ main {
 .fish__one {
     top: 3rem;
     left: 0;
+    animation: is-swimming-one 15s ease-in-out infinite;
 }
 
 .fish__two {
     top: 6rem;
     left: 3rem;
+    animation: is-swimming-two 15s ease-in-out infinite;
 }
 
 .fish__three {
-    top: 10rem;
+    top: 9.5rem;
     left: 6rem;
+    animation: is-swimming-three 15s ease-in-out infinite;
 }
 
 .fish__four {
     top: 12.2rem;
     left: 5.5rem;
+    animation: is-swimming-four 15s ease-in-out infinite;
 }
 
 .fish__five {
     top: 12rem;
     left: 10rem;
+    animation: is-swimming-five 15s ease-in-out infinite;
 }
 
 /* --> log in form  */
