@@ -257,19 +257,21 @@ main {
     padding-left: 3rem;
     text-align: justify;
     display: none;
+    opacity: 0;
 }
 
 .toggle {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 0.5rem;
     cursor: pointer;
 }
 
 .toggle svg{
-    fill: var(--pink-text);
+    fill: var(--text-color);
     width: 0.9rem;
     transform: rotate(90deg);
+    margin-top: 0.5rem;
 }
 
 /* -------------------- FOOTER -------------------- */
