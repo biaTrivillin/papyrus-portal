@@ -49,6 +49,7 @@
         display: block;
         font-size: 2rem;
         padding: 0 4rem 0 2.5rem;
+        margin-bottom: 0;
     }
 
     .field {
@@ -91,7 +92,7 @@
         overflow: hidden;
         position: absolute;
         right: 96%;
-        bottom: 9.5rem;
+        bottom: 10.5rem;
     }
 
     .field {

@@ -1,0 +1,30 @@
+.nav__button:hover, .warnning a:hover, .media__icons a:hover{
+    transform: scale(1.2);
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:active {
+    background-color: #295E73;
+}
+
+
+.field:focus + .field__label {
+    background-color: #0000;
+    animation: show-label 1s ease-in-out 1 forwards;
+}
+
+
+@keyframes show-label {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(-1.2rem);
+        opacity: 1;
+    }
+}

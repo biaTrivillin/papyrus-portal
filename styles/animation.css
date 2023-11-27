@@ -1,3 +1,17 @@
+/* ------------------------- PAGE TRANSITION ANIMATION ------------------------- */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ------------------------- IMAGE ANIMATIONS ------------------------- */
+
 @keyframes is-floating {
     0% {
         transform: translateX(0) translateY(0);

@@ -1,3 +1,5 @@
+// ---------------------- TOGGLE ----------------------
+
 const toggleIcon = document.querySelector('#toggle__icon');
 const toggleTitle = document.querySelector('#toggle__title')
 const toggleText = document.querySelector('#toggle__text')
@@ -75,10 +77,23 @@ function showToggle() {
     }
 }
 
+// ---------------------- LOG IN BUTTON ----------------------
+
 const loginButton = document.querySelector('#login__button');
 
 loginButton.addEventListener('click', login);
 
 function login() {
     window.location.href = '../html/next-page.html'
+}
+
+
+// ---------------------- CONTACT BUTTON ----------------------
+
+const contactButton = document.querySelector('#contact__button');
+
+contactButton.addEventListener('click', sendEmail);
+
+function sendEmail() {
+    window.location.href = "mailto:biatrivillin.code@gmail.com"
 }

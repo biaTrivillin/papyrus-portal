@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html" id="logo"><strong class="white__strong">PP</strong></a>
+        <a href="../index.html" id="logo"><strong class="white__strong">PP</strong></a>
         <nav id="nav__container">
             <a class="nav__button" href="../index.html"><strong class="white__strong">Log In</strong></a>
             <a class="nav__button" href="./sign-up.html"><strong class="pink__strong">Sign Up</strong></a>
@@ -37,11 +37,7 @@
 
                 <fieldset class="form__field">
                     <input id="name" class="field" type="text" placeholder="Name" required />
-                    <span class="error-message"></span>
-                </fieldset>
-
-                <fieldset class="form__field">
-                    <input id="last__name" class="field" type="text" placeholder="Last Name" required />
+                    <label class="field__label" for="name">Name</label>
                     <span class="error-message"></span>
                 </fieldset>
                 
@@ -68,22 +64,27 @@
                 </fieldset>
 
                 <fieldset class="form__field">
+                    <!-- <h3 id="date__of__birth__title">Date of Birth</h3> -->
                     <input id="date__of__birth" class="field" type="date" placeholder="Date of Birth" required />
+                    <label class="field__label" for="date__of__birth">Date of Birth</label>
                     <span class="error-message"></span>
                 </fieldset>
 
                 <fieldset class="form__field">
                     <input id="username" class="field" type="text" placeholder="Choose an Username" required />
+                    <label class="field__label" for="username">Username</label>
                     <span class="error-message"></span>
                 </fieldset>
 
                 <fieldset class="form__field">
                     <input id="phone__number" class="field" type="text" placeholder="Phone Number" required />
+                    <label class="field__label" for="phone__number">Phone Number</label>
                     <span class="error-message"></span>
                 </fieldset>
 
                 <fieldset class="form__field">
                     <input id="email" class="field" type="email" placeholder="Email" required />
+                    <label class="field__label" for="email">Email</label>
                     <span class="error-message"></span>
                 </fieldset>
 
@@ -91,11 +92,13 @@
 
                     <fieldset class="form__field">
                         <input id="password" class="field" type="password" placeholder="Password" required />
+                        <label class="field__label" for="password">Password</label>
                         <span class="error-message"></span>
                     </fieldset>
 
                     <fieldset class="form__field">
                         <input id="password__confirm" class="field" type="password" placeholder="Confirm Your Password" required />
+                        <label class="field__label" for="password__confirm">Confirm Your Password</label>
                         <span class="error-message"></span>
                     </fieldset>
                 </div>

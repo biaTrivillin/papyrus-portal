@@ -1,3 +1,16 @@
+.login__information {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+#log__in {
+    gap: 1.5rem;
+}
+
+/* ---------------------- RADIOBTN ---------------------- */
+
 .radio__button {
     position: absolute;
     opacity: 0;
@@ -21,6 +34,7 @@
     width: 0.7rem;
     border-radius: 50%;
     border: 0.1rem solid #295E73;
+    cursor: pointer;
 }
 
 .radio__button[type="radio"] + label {
@@ -36,7 +50,7 @@
 }
 
 #gender__field h3 {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 #gender__field {
@@ -44,11 +58,21 @@
 }
 
 .radio__title{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
-.login__information {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+/* ---------------------- FORM LABELS ---------------------- */
+
+.form__field {
+    position: relative;
 }
+
+.field__label {
+    font-size: 0.8rem;
+    overflow: hidden;
+    position: absolute;
+    left: 3.1rem;
+    opacity: 0;
+    z-index: 1;
+}
+
