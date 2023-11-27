@@ -46,3 +46,9 @@
 .radio__title{
     font-size: 0.8rem;
 }
+
+.login__information {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

@@ -102,7 +102,7 @@ main {
 
 #book__image__one {
     width: 16rem;
-    animation: is-floating 15s ease-in-out infinite;
+    animation: is-floating 10s ease-in-out infinite;
 }
 
 .fish {
@@ -114,31 +114,31 @@ main {
 .fish__one {
     top: 3rem;
     left: 0;
-    animation: is-swimming-one 15s ease-in-out infinite;
+    animation: is-swimming-one 10s ease-in-out infinite;
 }
 
 .fish__two {
     top: 6rem;
     left: 3rem;
-    animation: is-swimming-two 15s ease-in-out infinite;
+    animation: is-swimming-two 10s ease-in-out infinite;
 }
 
 .fish__three {
     top: 9.5rem;
     left: 6rem;
-    animation: is-swimming-three 15s ease-in-out infinite;
+    animation: is-swimming-three 10s ease-in-out infinite;
 }
 
 .fish__four {
     top: 12.2rem;
     left: 5.5rem;
-    animation: is-swimming-four 15s ease-in-out infinite;
+    animation: is-swimming-four 10s ease-in-out infinite;
 }
 
 .fish__five {
     top: 12rem;
     left: 10rem;
-    animation: is-swimming-five 15s ease-in-out infinite;
+    animation: is-swimming-five 10s ease-in-out infinite;
 }
 
 /* --> log in form  */
@@ -272,6 +272,10 @@ main {
     width: 0.9rem;
     transform: rotate(90deg);
     margin-top: 0.5rem;
+}
+
+#toggle__title {
+    font-size: 1.4rem;
 }
 
 /* -------------------- FOOTER -------------------- */

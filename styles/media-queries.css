@@ -1,3 +1,5 @@
+/* ---------------------------------- LOG IN PAGE ---------------------------------- */
+
 /* -------------------- TABLET SCREEN -------------------- */
 
 @media (min-width: 720px) {
@@ -77,3 +79,26 @@
 
 }
 
+/* ---------------------------------- SIGN UP PAGE ---------------------------------- */
+
+@media (min-width: 1000px) {
+    #log__in {
+        position: relative;
+        padding-left: 3rem;
+    }
+    
+    .login__information {
+        overflow: hidden;
+        position: absolute;
+        right: 96%;
+        bottom: 9.5rem;
+    }
+
+    .field {
+        width: calc(50vw - 8rem);
+    }
+
+    .img__container {
+        margin-top: 4rem;
+    }
+}
