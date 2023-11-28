@@ -92,7 +92,8 @@
         overflow: hidden;
         position: absolute;
         right: 96%;
-        bottom: 10.5rem;
+        bottom: 6.7rem;
+        padding-top: 1rem;
     }
 
     .field {
@@ -102,4 +103,9 @@
     .img__container {
         margin-top: 4rem;
     }
+
+    /* #login__button, .warnning {
+        align-self: start;
+        margin-left: 2.5rem;
+    }    */
 }
