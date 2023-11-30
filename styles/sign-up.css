@@ -120,3 +120,11 @@
     flex-direction: column;
     display: none;
 }
+
+#error__gender {
+    padding-left: 0.3rem;
+}
+
+#form__password {
+    margin-bottom: 1rem;
+}

@@ -100,6 +100,8 @@ const errorPasswordSpanSpecialCarac = document.querySelector('#error__password__
 const errorPasswordSpanEightCarac = document.querySelector('#error__password__six')
 
 
+const errorGender = document.querySelector('#error__gender')
+
 password.addEventListener('keyup', () => {
     if(checkPasswordEightCarac(password.value) !== true) {
         errorPasswordSpanEightCarac.style.color = 'red'
@@ -184,6 +186,8 @@ const submitError = document.querySelector('#submit__error');
 let terms = document.getElementById('terms')
 let labelTerms = document.querySelector('.terms__text')
 
+let validGender = false
+
 function submit() {
     let validTerms = terms.checked
 
@@ -191,14 +195,30 @@ function submit() {
         labelTerms.innerHTML = 'I have read and am aware of the terms regarding the processing of my data as described in the Privacy Policy of the website. <strong class="error__strong"> Tem que clicar aqui carai! </strong>'
     } else {
         labelTerms.innerHTML = 'I have read and am aware of the terms regarding the processing of my data as described in the Privacy Policy of the website.'
-    }  
+    } 
 
-    if(validName && validBirth && validUsername && validEmail && validConfPassword && validTerms && validPassword) {
+    const radioOne = document.querySelector("#radio__one");
+    const radioTwo = document.querySelector("#radio__two");
+    const radioThree = document.querySelector("#radio__three");
+
+    if(radioOne.checked || radioTwo.checked || radioThree.checked) {
+        validGender = true
+        errorGender.style.opacity = 0;
+    } else {
+        validGender = false
+        errorGender.style.opacity = 1;
+    }
+
+    if(validName && validBirth && validUsername && validEmail && validConfPassword && validTerms && validPassword && validGender) {
         submitError.style.opacity = 0;
     } else {
         submitError.style.opacity = 1;
     }
+    
 }
+
+
+
 
 
 

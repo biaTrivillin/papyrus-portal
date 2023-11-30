@@ -60,13 +60,13 @@
                             <span class="radio__title">Other</span>
                         </label>                    
                     </div>
-                    <span class="error-message"></span>
+                    <span class="error error-message" id="error__gender">Selecione</span>
                 </fieldset>
 
                 <fieldset class="form__field">
                     <input id="date__of__birth" class="field" type="date" required />
                     <label class="field__label" id="birth__label" for="date__of__birth">Date of Birth</label>
-                    <span class="error" id="error__birth">This date of birth is not valid.</span>
+                    <span class="error" id="error__birth">This date of birth is invalid.</span>
                 </fieldset>
 
                 <fieldset class="form__field">
@@ -89,7 +89,7 @@
 
                 <div class="login__information">
 
-                    <fieldset class="form__field">
+                    <fieldset class="form__field" id="form__password">
                         <input id="password" class="field" type="password" placeholder="Password" required />
                         <label class="field__label" id="password__label" for="password">Password</label>
                         <div class="error__container" id="error__password__container">
