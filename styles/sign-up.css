@@ -1,11 +1,11 @@
 .login__information {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.3rem;
 }
 
 #log__in {
-    gap: 1.5rem;
+    gap: 1.3rem;
 }
 
 /* ---------------------- RADIOBTN ---------------------- */
@@ -64,6 +64,8 @@
 
 .form__field {
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .field__label {
@@ -72,8 +74,7 @@
     position: absolute;
     left: 3.3rem;
     top: 0.3rem;
-    /* opacity: 0; */
-    z-index: 1;
+    opacity: 0;
 }
 
 #birth__label {
@@ -91,3 +92,31 @@
     margin-right: 0.5rem;
 }
 
+.error, .error__strong, .error__password {
+    font-size: 0.7rem;
+    color: red;
+    padding-left: 1rem;
+}
+
+#error__password__one {
+    color: #295E73;
+}
+
+.error {
+    opacity: 0;
+}
+
+.terms__field {
+    display: flex;
+    align-items: start;
+}
+
+#terms {
+    margin-top: 0.2rem;
+}
+
+.error__container {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}

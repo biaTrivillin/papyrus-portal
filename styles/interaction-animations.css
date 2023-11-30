@@ -13,25 +13,10 @@
 
 .field:focus + .field__label {
     background-color: #0000;
-    animation: slide-label 1s ease-in-out 1 forwards;
+    animation: slide-label 0.5s ease-in-out 1 forwards;
 }
-
-.field:focus + #birth__label {
-    animation: show-label 1s ease-in-out 1 forwards;
-}
-
 
 @keyframes slide-label {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(-1.5rem);
-    }
-}
-
-@keyframes show-label {
     from {
         transform: translateY(0);
         opacity: 0;
@@ -41,4 +26,21 @@
         transform: translateY(-1.5rem);
         opacity: 1;
     }
+}
+
+
+.field:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.field:focus:-moz-placeholder { 
+    color: transparent;  
+}
+
+.field:focus::-moz-placeholder {  
+    color: transparent;  
+}
+ 
+.field:focus:-ms-input-placeholder {  
+    color: transparent;  
 }

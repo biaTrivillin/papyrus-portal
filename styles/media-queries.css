@@ -92,7 +92,7 @@
         overflow: hidden;
         position: absolute;
         right: 96%;
-        bottom: 6.7rem;
+        bottom: 5.49rem;
         padding-top: 1rem;
     }
 
@@ -103,9 +103,4 @@
     .img__container {
         margin-top: 4rem;
     }
-
-    /* #login__button, .warnning {
-        align-self: start;
-        margin-left: 2.5rem;
-    }    */
 }
