@@ -9,7 +9,7 @@ const loginError = document.querySelector('#login__error');
 function isNotEmpty() {
     if(emailUsername.value == "" || password.value == "") {
         hasInformation = false;
-        loginError.innerHTML = 'preencha todos os campos';
+        loginError.innerHTML = 'Fill in all fields correctly.';
     } else {
         hasInformation = true;
         loginError.innerHTML = '';
@@ -29,7 +29,7 @@ function checkEmail() {
             emailError.innerHTML = '';
         } else {
             emailUsernameValid = false;
-            emailError.innerHTML = 'email não cadastrado';
+            emailError.innerHTML = 'Email not registered.';
         }
     })
 }
@@ -70,9 +70,16 @@ function checkPassword() {
     })
 
     if((emailUsername.value == userValid.usernameValid || emailUsername.value == userValid.emailValid) && password.value == userValid.passwordValid) {
-        window.location.href = '../html.next-page.html';
+        
+        window.location.href = '../html/next-page.html';
+
+        let token = Math.random().toString(10);
+        localStorage.setItem('token', token);
+
+        console.log(token)
+
     } else {
-        passwordError.innerHTML = 'senha incorreta';
+        passwordError.innerHTML = 'Incorrect password.';
     }
 }
 

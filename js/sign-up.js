@@ -196,7 +196,7 @@ function checkTerms() {
     validTerms = terms.checked
 
     if(validTerms == false) {
-        labelTerms.innerHTML = 'I have read and am aware of the terms regarding the processing of my data as described in the Privacy Policy of the website. <strong class="error__strong"> Tem que clicar aqui carai! </strong>'
+        labelTerms.innerHTML = 'I have read and am aware of the terms regarding the processing of my data as described in the Privacy Policy of the website. <strong class="error__strong"> You must agree to the terms to proceed. </strong>'
     } else {
         labelTerms.innerHTML = 'I have read and am aware of the terms regarding the processing of my data as described in the Privacy Policy of the website.'
     } 
