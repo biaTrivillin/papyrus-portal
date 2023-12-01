@@ -77,17 +77,6 @@ function showToggle() {
     }
 }
 
-// ---------------------- LOG IN BUTTON ----------------------
-
-const loginButton = document.querySelector('#login__button');
-
-loginButton.addEventListener('click', login);
-
-function login() {
-    window.location.href = '../html/next-page.html'
-}
-
-
 // ---------------------- CONTACT BUTTON ----------------------
 
 const contactButton = document.querySelector('#contact__button');

@@ -190,9 +190,10 @@ confirmPassword.addEventListener('keyup', () => {
 
 let terms = document.getElementById('terms')
 let labelTerms = document.querySelector('.terms__text')
+let validTerms 
 
 function checkTerms() {
-    let validTerms = terms.checked
+    validTerms = terms.checked
 
     if(validTerms == false) {
         labelTerms.innerHTML = 'I have read and am aware of the terms regarding the processing of my data as described in the Privacy Policy of the website. <strong class="error__strong"> Tem que clicar aqui carai! </strong>'
@@ -201,7 +202,17 @@ function checkTerms() {
     } 
 }
 
-//---------------------- RADIO BTN VALIDATION ----------------------
+//---------------------- GENDER VALIDATION ----------------------
+const radio = document.querySelectorAll('.radio__button')
+let gender
+
+function showGenderValue() {
+    for (let i = 0; i < radio.length; i++) {
+        if(radio[i].checked) {
+            gender = radio[i].value
+        }
+    }
+}
 
 const radioOne = document.querySelector("#radio__one");
 const radioTwo = document.querySelector("#radio__two");
@@ -233,12 +244,32 @@ function submit() {
 
     checkRadio()
 
+    showGenderValue()
+
     if(validName && validBirth && validUsername && validEmail && validConfPassword && validTerms && validPassword && validGender && validPhone) {
         submitError.style.opacity = 0;
+
+        let userList = JSON.parse(localStorage.getItem('userList') || '[]')
+
+        userList.push(
+            {
+                nameInform: nameInput.value,
+                userInform: username.value,
+                passwordInform: password.value,
+                birthInform: birth.value,
+                phoneInform: phone.value,
+                genderInform: gender,
+                emailInform: email.value,
+            }
+        )
+
+        localStorage.setItem('userList', JSON.stringify(userList))
+
+        window.location.href = '../index.html'
+
     } else {
         submitError.style.opacity = 1;
-    }
-    
+    }    
 }
 
 
