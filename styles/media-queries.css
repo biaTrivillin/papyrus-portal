@@ -56,6 +56,10 @@
         width: calc(50vw - 6rem);
     }
 
+    .show__pass__btn {
+        right: 0.6rem;
+    }
+
     /* _____________ STORE SECTION _____________ */
 
     #pp__store {
@@ -104,3 +108,5 @@
         margin-top: 4rem;
     }
 }
+
+

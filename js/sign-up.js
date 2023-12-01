@@ -1,38 +1,9 @@
-const signUpBtn = document.querySelector('#signup__button');
+//---------------------- NAME VALIDATION ---------------------- 
 
 const nameInput = document.querySelector('#name');
 const errorName = document.querySelector('#error__name');
 let validName = false;
 
-const birth = document.querySelector('#date__of__birth');
-const errorBirth = document.querySelector('#error__birth');
-let validBirth = false;
-
-
-const username = document.querySelector('#username');
-const errorUsername = document.querySelector('#error__username');
-let validUsername = false;
-
-
-const phone = document.querySelector('#phone__number');
-const errorPhone = document.querySelector('#error__phone');
-let validPhone = false;
-
-
-const email = document.querySelector('#email');
-const errorEmail = document.querySelector('#error__email');
-let validEmail = false
-
-
-const password = document.querySelector('#password');
-let validPassword = false;
-
-
-const confirmPassword = document.querySelector('#password__confirm');
-const errorConfPassword = document.querySelector('#error__confirm__password')
-let validConfPassword = false;
-
-//---------------------- NAME VALIDATION ---------------------- 
 
 nameInput.addEventListener('keyup', () => {
     if(nameInput.value.length <= 2) {
@@ -44,6 +15,12 @@ nameInput.addEventListener('keyup', () => {
     }
 })
 
+//---------------------- DATE OF BIRTH VALIDATION ---------------------- 
+
+const birth = document.querySelector('#date__of__birth');
+const errorBirth = document.querySelector('#error__birth');
+let validBirth = false;
+
 birth.addEventListener('keyup', () => {
     if(birth.value.length <= 8) {
         validBirth = false;
@@ -54,6 +31,12 @@ birth.addEventListener('keyup', () => {
     }
 })
 
+//---------------------- USERNAME VALIDATION ---------------------- 
+
+const username = document.querySelector('#username');
+const errorUsername = document.querySelector('#error__username');
+let validUsername = false;
+
 username.addEventListener('keyup', () => {
     if(username.value.length <= 2) {
         validUsername = false;
@@ -63,6 +46,12 @@ username.addEventListener('keyup', () => {
         errorUsername.style.opacity = 0
     }
 })
+
+//---------------------- PHONE NUMBER VALIDATION ---------------------- 
+
+const phone = document.querySelector('#phone__number');
+const errorPhone = document.querySelector('#error__phone');
+let validPhone = false;
 
 phone.addEventListener('keyup', () => {
     phone.value = phone.value.replace(/\D/g,'')
@@ -78,6 +67,12 @@ phone.addEventListener('keyup', () => {
     }
 })
 
+//---------------------- EMAIL VALIDATION ---------------------- 
+
+const email = document.querySelector('#email');
+const errorEmail = document.querySelector('#error__email');
+let validEmail = false
+
 email.addEventListener('keyup', () => {
     if(checkEmail(email.value) !== true) {
         validEmail = false;
@@ -92,6 +87,11 @@ function checkEmail(email) {
     let emailPattern =  /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
     return emailPattern.test(email); 
 }
+
+//---------------------- PASSWORD VALIDATION ---------------------- 
+
+const password = document.querySelector('#password');
+let validPassword = false;
 
 const errorPassword = document.querySelector('#error__password__container')
 const errorPasswordSpanNumber = document.querySelector('#error__password__two')
@@ -143,6 +143,7 @@ password.addEventListener('keyup', () => {
     }
 })
 
+
 function checkPasswordNumber(password) {
     let passwordPatternNumber =  /(?=.*\d)/; 
     return passwordPatternNumber.test(password); 
@@ -168,6 +169,13 @@ function checkPasswordEightCarac(password) {
     return passwordPatternEightCarac.test(password); 
 }
 
+//---------------------- CONFIRM PASSWORD VALIDATION ---------------------- 
+
+const confirmPassword = document.querySelector('#password__confirm');
+const errorConfPassword = document.querySelector('#error__confirm__password')
+let validConfPassword = false;
+
+
 confirmPassword.addEventListener('keyup', () => {
     if(confirmPassword.value != password.value) {
         validConfPassword = false;
@@ -178,19 +186,12 @@ confirmPassword.addEventListener('keyup', () => {
     }
 })
 
-
-signUpBtn.addEventListener('click', submit);
-
-
-const submitError = document.querySelector('#submit__error');
+//---------------------- TERMS CHECKBOX VALIDATION ---------------------- 
 
 let terms = document.getElementById('terms')
 let labelTerms = document.querySelector('.terms__text')
 
-let validGender = false
-
-
-function submit() {
+function checkTerms() {
     let validTerms = terms.checked
 
     if(validTerms == false) {
@@ -198,10 +199,17 @@ function submit() {
     } else {
         labelTerms.innerHTML = 'I have read and am aware of the terms regarding the processing of my data as described in the Privacy Policy of the website.'
     } 
+}
 
-    const radioOne = document.querySelector("#radio__one");
-    const radioTwo = document.querySelector("#radio__two");
-    const radioThree = document.querySelector("#radio__three");
+//---------------------- RADIO BTN VALIDATION ----------------------
+
+const radioOne = document.querySelector("#radio__one");
+const radioTwo = document.querySelector("#radio__two");
+const radioThree = document.querySelector("#radio__three");
+
+let validGender = false
+
+function checkRadio() {
 
     if(radioOne.checked || radioTwo.checked || radioThree.checked) {
         validGender = true
@@ -210,6 +218,20 @@ function submit() {
         validGender = false
         errorGender.style.opacity = 1;
     }
+}
+
+//---------------------- SUBMIT ----------------------
+
+const signUpBtn = document.querySelector('#signup__button');
+
+signUpBtn.addEventListener('click', submit);
+
+const submitError = document.querySelector('#submit__error');
+
+function submit() {
+    checkTerms()
+
+    checkRadio()
 
     if(validName && validBirth && validUsername && validEmail && validConfPassword && validTerms && validPassword && validGender && validPhone) {
         submitError.style.opacity = 0;
