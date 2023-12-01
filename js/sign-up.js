@@ -25,13 +25,14 @@ let validEmail = false
 
 
 const password = document.querySelector('#password');
-// const errorPassword = document.querySelector('#error__password');
 let validPassword = false;
 
 
 const confirmPassword = document.querySelector('#password__confirm');
 const errorConfPassword = document.querySelector('#error__confirm__password')
 let validConfPassword = false;
+
+//---------------------- NAME VALIDATION ---------------------- 
 
 nameInput.addEventListener('keyup', () => {
     if(nameInput.value.length <= 2) {
@@ -188,6 +189,7 @@ let labelTerms = document.querySelector('.terms__text')
 
 let validGender = false
 
+
 function submit() {
     let validTerms = terms.checked
 
@@ -209,7 +211,7 @@ function submit() {
         errorGender.style.opacity = 1;
     }
 
-    if(validName && validBirth && validUsername && validEmail && validConfPassword && validTerms && validPassword && validGender) {
+    if(validName && validBirth && validUsername && validEmail && validConfPassword && validTerms && validPassword && validGender && validPhone) {
         submitError.style.opacity = 0;
     } else {
         submitError.style.opacity = 1;

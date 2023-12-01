@@ -172,7 +172,7 @@ main {
 }
 
 .field:focus {
-    border:  solid 0.1rem var(--pink-text);
+    border:  solid 0.1rem var(--header-color);
     outline: 0;
     box-shadow: 0 0 0 0;
 }
@@ -341,3 +341,30 @@ footer h2 {
 ::-webkit-scrollbar-thumb {
     background: var(--text-color);
 }
+
+/* ---------------------- SHOW PASSWORD BTN ---------------------- */
+
+#password__field {
+    position: relative;
+}
+
+.show__pass__btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    right: 0.6rem;
+    top: 0.3rem;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opened__eye {
+    display: none;
+}
+

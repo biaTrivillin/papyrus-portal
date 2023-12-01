@@ -8,6 +8,10 @@
     gap: 1.3rem;
 }
 
+#form__password {
+    margin-bottom: 1rem;
+}
+
 /* ---------------------- RADIOBTN ---------------------- */
 
 .radio__button {
@@ -92,6 +96,17 @@
     margin-right: 0.5rem;
 }
 
+.terms__field {
+    display: flex;
+    align-items: start;
+}
+
+#terms {
+    margin-top: 0.2rem;
+}
+
+/* ---------------------- ERROR MESSAGE ---------------------- */
+
 .error, .error__strong, .error__password {
     font-size: 0.7rem;
     color: red;
@@ -106,15 +121,6 @@
     opacity: 0;
 }
 
-.terms__field {
-    display: flex;
-    align-items: start;
-}
-
-#terms {
-    margin-top: 0.2rem;
-}
-
 .error__container {
     display: flex;
     flex-direction: column;
@@ -125,6 +131,4 @@
     padding-left: 0.3rem;
 }
 
-#form__password {
-    margin-bottom: 1rem;
-}
+
