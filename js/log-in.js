@@ -29,7 +29,7 @@ function checkEmail() {
             emailError.innerHTML = '';
         } else {
             emailUsernameValid = false;
-            emailError.innerHTML = 'Email not registered.';
+            emailError.innerHTML = 'Email or username not registered.';
         }
     })
 }
