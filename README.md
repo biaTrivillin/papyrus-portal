@@ -36,7 +36,7 @@
 
 phone.value = phone.value.replace(/\D/g,'') //allows just numbers
 phone.value = phone.value.replace(/(\d{2})(\d)/,"($1) $2") //brazillian number format with area code in parentheses
-phone.value = phone.value.replace(/(\d)(\d{4})$/,"$1-$2") //brazilian fixed and mobile number format.
+phone.value = phone.value.replace(/(\d)(\d{4})$/,"$1-$2") //brazilian landline and mobile number format.
 ```
 <div align="center">
   <img src="assets/phone.gif" width="400px">
@@ -72,6 +72,11 @@ phone.value = phone.value.replace(/(\d)(\d{4})$/,"$1-$2") //brazilian fixed and 
   <img src="assets/token.gif" width="500px">
 </div> <br><br>
 
+## Deploy
+The project was deployed using the Vercel platform and is available at the [link](https://papyrus-portal-pi.vercel.app/)
+<br><br>
+
+
 ## Technologies used in the project.
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
@@ -86,8 +91,7 @@ phone.value = phone.value.replace(/(\d)(\d{4})$/,"$1-$2") //brazilian fixed and 
 </div>
 <br>
 
-## Deploy
-The project was deployed using the Vercel platform and is available at the following [link](https://papyrus-portal-pi.vercel.app/)
+
 
 
 
