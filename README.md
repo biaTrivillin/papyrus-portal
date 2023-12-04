@@ -66,7 +66,7 @@ phone.value = phone.value.replace(/(\d)(\d{4})$/,"$1-$2") //brazilian fixed and 
 <div style="display: inline_block" align="center">
   <img src="assets/login1.gif" width="400px">
   <img src="assets/login2.gif" width="400px">
-</div>
+</div> <br><br>
 
 - Storage of information through localStorage.
 <div align="center">
