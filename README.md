@@ -9,12 +9,12 @@
 
 ## Features and Details
 
-- The project's design was developed with a mobile-first approach, enabling the creation of a responsive page with minimal interventions through media queries.
+- The project's design was developed with a **mobile-first** approach, enabling the creation of a responsive page with minimal interventions through media queries.
 <div align="center">
   <img src="assets/responsive.gif" width="500px">
 </div><br><br>
 
-- Masks were implemented to format values entered in the sign up page input fields, indicating valid formats and making the information more visually accessible. The use of these masks enhances the usability of the page and helps ensure the integrity of the data provided to the system. The following regular expressions (regex) were employed in the JavaScript code for this purpose.
+- **Masks** were implemented to format values entered in the sign up page input fields, indicating valid formats and making the information more visually accessible. The use of these masks enhances the **usability **of the page and helps ensure the **integrity** of the data provided to the system. The following **regular expressions (regex)** were employed in the JavaScript code for this purpose.
 
 
 
@@ -43,31 +43,31 @@ phone.value = phone.value.replace(/(\d)(\d{4})$/,"$1-$2") //brazilian landline a
 </div><br>
 <br><br>
 
-- Implementation of a floating label that allows the display of the field title even when it is in focus.
-- Password visibility option and a span displaying the required pattern, enhancing the usability of the page.
+- Implementation of a **floating label** that allows the display of the field title even when it is in focus.
+- **Password visibility** option and a span displaying the required pattern, enhancing the **usability** of the page.
 <div style="display: inline_block">
   <img src="assets/label.gif" width="400px">
   <img src="assets/password.gif" width="400px">
 </div><br><br>
 
-- Efficient sign-up system that allows data submission only when all fields are filled with valid information.
+- **Efficient sign-up system** that allows data submission only when all fields are filled with valid information.
 <div style="display: inline_block">
   <img src="assets/signup1.gif" width="400px">
   <img src="assets/signup2.gif" width="400px">
 </div> <br><br>
 
-- Efficient login system that identifies and signals invalid information.
+- **Efficient login system** that identifies and signals invalid information.
 <div style="display: inline_block">
   <img src="assets/login1.gif" width="400px">
   <img src="assets/login2.gif" width="400px">
 </div> <br><br>
 
-- Storage of information through localStorage.
+- Storage of information through **localStorage**.
 <div align="center">
   <img src="assets/localstorage.gif" width="500px">
 </div> <br><br>
 
-- Creation of a random token with each new login, preventing access by users not logged into the session.
+- Creation of a **random token** with each new login, preventing access by users not logged into the session.
 <div align="center">
   <img src="assets/token.gif" width="500px">
 </div> <br><br>
@@ -76,6 +76,9 @@ phone.value = phone.value.replace(/(\d)(\d{4})$/,"$1-$2") //brazilian landline a
 The project was deployed using the Vercel platform and is available at the [link](https://papyrus-portal-pi.vercel.app/)
 <br><br>
 
+## Figma Design
+The primary design of the project was created in the Figma platform and is available at the following [link](https://www.figma.com/file/YDu2NPpAVSVojwknqt8gZT/Untitled?type=design&node-id=0%3A1&mode=design&t=NVZ160uayM8lR4D8-1) 
+<br><br>
 
 ## Technologies used in the project.
 <div align="left">
