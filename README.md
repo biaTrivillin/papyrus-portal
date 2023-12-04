@@ -14,13 +14,13 @@ This project focuses on implementing the login and sign-up pages of the Papyrus 
 ## Features and Details:
 
 - The project's design was developed with a mobile-first approach, enabling the creation of a responsive page with minimal interventions through media queries.
-<img src="assets/responsive.gif" width="500px">
-<br><br>
+<div align="center">
+  <img src="assets/responsive.gif" width="500px">
+</div><br><br>
 
 - Masks were implemented to format values entered in the sign up page input fields, indicating valid formats and making the information more visually accessible. The use of these masks enhances the usability of the page and helps ensure the integrity of the data provided to the system. The following regular expressions (regex) were employed in the JavaScript code for this purpose.
 
-<img src="assets/phone.gif" width="400px">
-<br>
+
 
 ```JavaScript
 //password ----------------------------------------------------------
@@ -42,7 +42,10 @@ phone.value = phone.value.replace(/\D/g,'') //allows just numbers
 phone.value = phone.value.replace(/(\d{2})(\d)/,"($1) $2") //brazillian number format with area code in parentheses
 phone.value = phone.value.replace(/(\d)(\d{4})$/,"$1-$2") //brazilian fixed and mobile number format.
 ```
- <br><br>
+<div align="center">
+  <img src="assets/phone.gif" width="400px">
+</div><br>
+<br><br>
 
 - Implementation of a floating label that allows the display of the field title even when it is in focus.
 - Password visibility option and a span displaying the required pattern, enhancing the usability of the page.
@@ -64,11 +67,14 @@ phone.value = phone.value.replace(/(\d)(\d{4})$/,"$1-$2") //brazilian fixed and 
 </div> <br><br>
 
 - Storage of information through localStorage.
-<img src="assets/localstorage.gif" width="700px">
-<br><br>
+<div align="center">
+  <img src="assets/localstorage.gif" width="500px">
+</div> <br><br>
 
 - Creation of a random token with each new login, preventing access by users not logged into the session.
-<img src="assets/token.gif" width="700px">
+<div align="center">
+  <img src="assets/token.gif" width="500px">
+</div> <br><br>
 
 
 
