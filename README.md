@@ -28,7 +28,7 @@
   <img src="assets/responsive.gif" width="500px">
 </div><br><br>
 
-- **Masks** were implemented to format values entered in the sign up page input fields, indicating valid formats and making the information more visually accessible. The use of these masks enhances the **usability **of the page and helps ensure the **integrity** of the data provided to the system. The following **regular expressions (regex)** were employed in the JavaScript code for this purpose.
+- **Masks** were implemented to format values entered in the sign up page input fields, indicating valid formats and making the information more visually accessible. The use of these masks enhances the **usability** of the page and helps ensure the **integrity** of the data provided to the system. The following **regular expressions (regex)** were employed in the JavaScript code for this purpose.
 
 
 
