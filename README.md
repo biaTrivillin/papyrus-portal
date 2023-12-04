@@ -1,17 +1,13 @@
 # 📖 Papyrus Portal 📖
-
-
-Payrus Portal is a plataform 
-This project focuses on implementing the login and sign-up pages of the Papyrus Portal, a platform that combines reading organization features with an online book store.
-<br>
+>This project focuses on implementing the login and sign-up pages of the Papyrus Portal, a platform that combines reading organization features with an online book store.
 <br>
 
-## PREVIEW
+## Preview
 <div align="center">
   <img align="center" src="assets/preview.gif" width="700px">
 </div> <br>
 
-## Features and Details:
+## Features and Details
 
 - The project's design was developed with a mobile-first approach, enabling the creation of a responsive page with minimal interventions through media queries.
 <div align="center">
@@ -50,8 +46,8 @@ phone.value = phone.value.replace(/(\d)(\d{4})$/,"$1-$2") //brazilian fixed and 
 - Implementation of a floating label that allows the display of the field title even when it is in focus.
 - Password visibility option and a span displaying the required pattern, enhancing the usability of the page.
 <div style="display: inline_block">
-<img src="assets/password.gif" width="400px">
-<img src="assets/label.gif" width="400px">
+  <img src="assets/label.gif" width="400px">
+  <img src="assets/password.gif" width="400px">
 </div><br><br>
 
 - Efficient sign-up system that allows data submission only when all fields are filled with valid information.
@@ -75,6 +71,23 @@ phone.value = phone.value.replace(/(\d)(\d{4})$/,"$1-$2") //brazilian fixed and 
 <div align="center">
   <img src="assets/token.gif" width="500px">
 </div> <br><br>
+
+## Technologies used in the project.
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" height="40" alt="jquery logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40" alt="figma logo"  />
+</div>
+<br>
+
+## Deploy
+The project was deployed using the Vercel platform and is available at the following [link](https://papyrus-portal-pi.vercel.app/)
 
 
 
