@@ -45,19 +45,19 @@ phone.value = phone.value.replace(/(\d)(\d{4})$/,"$1-$2") //brazilian landline a
 
 - Implementation of a **floating label** that allows the display of the field title even when it is in focus.
 - **Password visibility** option and a span displaying the required pattern, enhancing the **usability** of the page.
-<div style="display: inline_block">
+<div style="display: inline_block" align="center">
   <img src="assets/label.gif" width="400px">
   <img src="assets/password.gif" width="400px">
 </div><br><br>
 
 - **Efficient sign-up system** that allows data submission only when all fields are filled with valid information.
-<div style="display: inline_block">
+<div style="display: inline_block" align="center">
   <img src="assets/signup1.gif" width="400px">
   <img src="assets/signup2.gif" width="400px">
 </div> <br><br>
 
 - **Efficient login system** that identifies and signals invalid information.
-<div style="display: inline_block">
+<div style="display: inline_block" align="center">
   <img src="assets/login1.gif" width="400px">
   <img src="assets/login2.gif" width="400px">
 </div> <br><br>
