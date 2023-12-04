@@ -45,7 +45,7 @@ function checkPassword() {
     let userValid = {
         nameValid: 'name',
         usernameValid: 'user',
-        passwordValid: 'passwuord',
+        passwordValid: 'password',
         birthValid: 'birth',
         phoneValid: 'phone',
         genderValid: 'gender',
