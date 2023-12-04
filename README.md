@@ -7,6 +7,20 @@
   <img align="center" src="assets/preview.gif" width="700px">
 </div> <br>
 
+## Technologies used in the project.
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" height="40" alt="jquery logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40" alt="figma logo"  />
+</div>
+<br>
+
 ## Features and Details
 
 - The project's design was developed with a **mobile-first** approach, enabling the creation of a responsive page with minimal interventions through media queries.
@@ -70,7 +84,7 @@ phone.value = phone.value.replace(/(\d)(\d{4})$/,"$1-$2") //brazilian landline a
 - Creation of a **random token** with each new login, preventing access by users not logged into the session.
 <div align="center">
   <img src="assets/token.gif" width="500px">
-</div> <br><br>
+</div> <br>
 
 ## Deploy
 The project was deployed using the Vercel platform and is available at the [link](https://papyrus-portal-pi.vercel.app/)
@@ -80,19 +94,7 @@ The project was deployed using the Vercel platform and is available at the [link
 The primary design of the project was created in the Figma platform and is available at the following [link](https://www.figma.com/file/YDu2NPpAVSVojwknqt8gZT/Untitled?type=design&node-id=0%3A1&mode=design&t=NVZ160uayM8lR4D8-1) 
 <br><br>
 
-## Technologies used in the project.
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" height="40" alt="jquery logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40" alt="figma logo"  />
-</div>
-<br>
+
 
 
 
