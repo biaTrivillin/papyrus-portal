@@ -43,13 +43,13 @@ const passwordError = document.querySelector('#password__error');
 function checkPassword() {
 
     let userValid = {
-        nameValid: '',
-        usernameValid: '',
+        nameValid: 'name',
+        usernameValid: 'user',
         passwordValid: 'passwuord',
-        birthValid: '',
-        phoneValid: '',
-        genderValid: '',
-        emailValid: '',
+        birthValid: 'birth',
+        phoneValid: 'phone',
+        genderValid: 'gender',
+        emailValid: 'email',
     }
 
     userList = JSON.parse(localStorage.getItem('userList'));

@@ -20,6 +20,7 @@
     --text-color: #295E73;
     --pink-text: #F26D78;
     --white-text: #F6F6F6;
+    color-scheme: only light;
 }
 
 body, html {
