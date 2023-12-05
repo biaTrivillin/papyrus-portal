@@ -94,7 +94,7 @@ The project was deployed using the Vercel platform and is available at the [link
 The primary design of the project was created in the Figma platform and is available at the following [link](https://www.figma.com/file/YDu2NPpAVSVojwknqt8gZT/Untitled?type=design&node-id=0%3A1&mode=design&t=NVZ160uayM8lR4D8-1) 
 <br><br>
 
-## Image credits
+## Images credits
 The images used were created by the illustrator and graphic designer Andrea De Santis. Check out their work on [Instagram](https://www.instagram.com/andreadesantisillustrator/) or [Behance](https://www.behance.net/andreadesantis).
 
 
